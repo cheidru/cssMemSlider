@@ -1,0 +1,111 @@
+html{
+    box-sizing: border-block;     
+} 
+
+*, *::before, *::after{    
+    box-sizing: inherit;
+    } 
+
+body {
+    background: black;
+}
+
+.wrapper {
+    max-width: 1920px;
+    height: auto;
+    margin: 0 auto;    
+    padding: 0 10%;
+}
+
+
+#meme1, #meme2, #meme3, #meme4, #meme5 {
+    position: absolute;
+    top: 20px;
+    left: -200%;
+    padding-bottom: 20px;
+    width: 1920px;
+    height: 800px;
+    border: black 1px solid;
+    border-radius: 10px;
+}
+
+#cap1, #cap2, #cap3, #cap4, #cap5 {
+    position: absolute;
+    top: 1200;
+    left: -200%;
+} 
+
+.slider-wrapper {
+    max-width: 100%;
+    height: 100%;
+}
+
+.slider-controls {
+    padding-top: 1200px;
+    padding-left: 1000px;
+}
+
+.slider-control {
+    margin-right: 10px;
+    text-decoration: none;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: white;
+    border:white 3px solid;
+    border-radius: 50%;
+    font-size: 32px;
+}
+
+.slider-control:last-child {
+    margin-right: 0px;
+}
+
+.slider-control:hover {
+    background: white;
+}
+
+.caption {
+    grid-area: caption;
+    color: white;
+    font-size: 32px;
+}
+
+.slider-control:active, .slider-control:focus {
+    border: lightslategray 3px solid;
+    background: lightslategray;
+}
+
+#ctrl1:active, #ctrl1:focus #meme1 { 
+    z-index: 2;
+    left: 0;
+    top: 0;
+}
+
+#ctrl2:active, #ctrl2:focus #meme2 {
+    z-index: 2;
+    left: 0;
+    top: 0;
+}
+
+#ctrl3:active, #ctrl3:focus #meme3 { 
+    z-index: 2;
+    left: 0;
+    top: 0;
+}
+
+#ctrl4:active, #ctrl4:focus #meme4 { 
+    z-index: 2;
+    left: 0;
+    top: 0;
+}
+
+#ctrl5:active, #ctrl5:focus #meme5 { 
+    z-index: 2;
+    left: 0;
+    top: 0;
+}
+
+#meme1, #meme2, #meme3, #meme4, #meme5 {       
+    transition-duration: .25s;       
+}  
